@@ -1,4 +1,4 @@
-package edu.itmo.hyperb0rean.domain;
+package edu.itmo.hyperb0rean.lab1.domain;
 
 public class Zafod {
     private Planet planet;

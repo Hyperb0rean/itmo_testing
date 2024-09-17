@@ -1,5 +1,6 @@
-package edu.itmo.hyperb0rean.domain;
+package edu.itmo.hyperb0rean.lab1.domain;
 
+import edu.itmo.hyperb0rean.lab1.domain.Material;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

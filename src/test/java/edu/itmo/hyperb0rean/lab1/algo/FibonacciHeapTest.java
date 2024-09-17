@@ -1,5 +1,7 @@
-package edu.itmo.hyperb0rean.algo;
+package edu.itmo.hyperb0rean.lab1.algo;
 
+import edu.itmo.hyperb0rean.lab1.algo.FibonacciHeap;
+import edu.itmo.hyperb0rean.lab1.algo.FibonacciHeapNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;

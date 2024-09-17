@@ -1,4 +1,4 @@
-package edu.itmo.hyperb0rean.algo;
+package edu.itmo.hyperb0rean.lab1.algo;
 
 import java.util.ArrayList;
 import java.util.Collections;

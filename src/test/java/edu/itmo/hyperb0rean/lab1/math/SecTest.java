@@ -1,10 +1,10 @@
-package edu.itmo.hyperb0rean.math;
+package edu.itmo.hyperb0rean.lab1.math;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.ValueSource;
-import edu.itmo.hyperb0rean.math.Sec;
+import edu.itmo.hyperb0rean.lab1.math.Sec;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;

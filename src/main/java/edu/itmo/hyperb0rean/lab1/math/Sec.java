@@ -1,4 +1,4 @@
-package edu.itmo.hyperb0rean.math;
+package edu.itmo.hyperb0rean.lab1.math;
 
 public class Sec {
     public static double calc(double x, int n) {
