@@ -24,7 +24,7 @@ public class RegistrationUseCaseTest {
     private void executeWithCapabilities(WebDriver driver) {
         HomePage homePage = new HomePage(driver);
         RegistrationPage registrationPage = homePage.goToRegistrationPage();
-        registrationPage.register("test_user", "test_password", "test_email@example.com");
+        registrationPage.register("test_user_1337", "Testpassword1337", "test_email@example.com");
         assertTrue(registrationPage.isRegistrationSuccessful());
         driver.quit();
     }

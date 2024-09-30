@@ -1,7 +1,7 @@
 package edu.itmo.hyperb0rean.lab3.usecases;
 
 import edu.itmo.hyperb0rean.lab3.model.HomePage;
-import edu.itmo.hyperb0rean.lab3.model.SearchPage;
+import edu.itmo.hyperb0rean.lab3.model.GuidePage;
 import edu.itmo.hyperb0rean.lab3.util.Utils;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class SearchUseCaseTest {
+public class GuideUseCaseTest {
 
     @BeforeAll
     static void prepareDrivers() {
@@ -23,9 +23,9 @@ public class SearchUseCaseTest {
 
     private void executeWithCapabilities(WebDriver driver) {
         HomePage homePage = new HomePage(driver);
-        SearchPage searchPage = homePage.goToSearchPage();
-        searchPage.searchFor("test_search_query");
-        assertTrue(searchPage.isSearchResultDisplayed());
+        GuidePage guidePage = homePage.goToSearchPage();
+        guidePage.open();
+        assertTrue(guidePage.isSearchResultDisplayed());
         driver.quit();
     }
 }

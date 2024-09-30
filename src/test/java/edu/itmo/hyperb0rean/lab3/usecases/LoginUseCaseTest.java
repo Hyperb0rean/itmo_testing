@@ -24,7 +24,7 @@ public class LoginUseCaseTest {
     private void executeWithCapabilities(WebDriver driver) {
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = homePage.goToLoginPage();
-        loginPage.login("correct_username", "correct_password");
+        loginPage.login("test_email@example.com", "Testuser1337");
         assertTrue(loginPage.isLoginSuccessful());
         driver.quit();
     }

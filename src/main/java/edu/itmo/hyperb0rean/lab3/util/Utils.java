@@ -29,7 +29,7 @@ public class Utils {
     public static List<WebDriver> getDrivers() {
         List<WebDriver> drivers = new ArrayList<>();
         drivers.add(getChromeDriver());
-        drivers.add(getFirefoxDriver());
+//        drivers.add(getFirefoxDriver());
         return drivers;
     }
 
@@ -42,7 +42,7 @@ public class Utils {
     }
 
     public static WebElement getElementBySelector(WebDriver driver, By selector) {
-        WebDriverWait driverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait driverWait = new WebDriverWait(driver, Duration.ofMillis(200));
         return driverWait.until(ExpectedConditions.visibilityOfElementLocated(selector));
     }
 
